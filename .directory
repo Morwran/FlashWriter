@@ -1,0 +1,9 @@
+[Dolphin]
+GroupedSorting=true
+Timestamp=2020,1,13,18,40,30
+Version=3
+ViewMode=1
+VisibleRoles=Details_text,Details_size,Details_date,Details_type,CustomizedDetails
+
+[Settings]
+HiddenFilesShown=true
