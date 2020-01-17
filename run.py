@@ -7,13 +7,13 @@ import sys, os
 from terminal import Terminal
 from write_image import WriteImage
 
-port = "/dev/ttyUSB0"
+port = "/dev/ttyUSB4"
 baudrate=115200
 stopbits=1
 parity="N"
 bytesizes=8
 
-ADDR_HW="f0"
+ADDR_HW="f1"
 
 if __name__ =='__main__':
 

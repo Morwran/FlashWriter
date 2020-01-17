@@ -121,17 +121,21 @@ class Terminal(RpiSerial,WriteImage):
 					
 					if not self.msg_dict['boot']['err:'][1]:
 						crc, size = self.param_im()
-						if self.msg_dict['boot']['msg:'][1] or self.msg_dict['boot']['wrn:'][1]:
-							msg1="uart stop {}".format(self.ADDR_HW)
-							print msg1 
-							self.write_byte(msg1)
-							time.sleep(0.1)
+						#if self.msg_dict['boot']['msg:'][1] or self.msg_dict['boot']['wrn:'][1]:
+						#	msg1="uart stop {}".format(self.ADDR_HW)
+						#	print msg1 
+						#	self.write_byte(msg1)
+						#	time.sleep(0.1)
 						
+						#msg1="uart stop {}".format(self.ADDR_HW)
+						#print msg1 
+						#self.write_byte(msg1)
+						#time.sleep(0.1)
 
 						msg2="boot srec {} {} {} {}".format(size,crc,int(self.WREN),self.ADDR_HW)
 						print msg2
 						self.write_byte(msg2)
-						time.sleep(1)
+						time.sleep(5)
 
 						#msg_wren = "fl wren {}".format(self.ADDR_HW)
 						#print msg_wren
