@@ -16,8 +16,8 @@ bytesizes=8
 #ADDR_HW="f0"
 
 if __name__ =='__main__':
-
-	if len (sys.argv) == 2:
+	#print sys.argv
+	if len(sys.argv) == 3:
 		img_path=str(sys.argv[1])
 		if(os.path.isfile(img_path)):
 			print img_path
@@ -37,5 +37,5 @@ if __name__ =='__main__':
 		else:
 			print "Error: Image path incorrect"	
 	else:
-		print "Error: Image path not set"	
+		print "Error: Image path not set ", len(sys.argv)	
 
