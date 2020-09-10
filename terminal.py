@@ -57,7 +57,7 @@ class Terminal(RpiSerial,WriteImage):
 		
 		if(self.read_str):
 			if(len(self.read_str.split())>1):
-	
+				print self.read_str
 				if self.read_str.split()[0] in self.msg_dict:  #проверяем наличие идентификатора в словаре
 					#print self.d.keys()[1:]
 					self.type_cmd = self.read_str.split()[0] #идентификатор сообщения
@@ -91,8 +91,8 @@ class Terminal(RpiSerial,WriteImage):
 										self.msg_dict[self.type_cmd][type_boot_msg][0] = boot_msg
 										print type_boot_msg + ' ' + boot_msg
 										return 0 
-					else:
-						print self.read_str			
+					#else:
+					#	print self.read_str			
 
 
 
