@@ -12,6 +12,6 @@ addr - адрес ПЛИС
 
 Пример:
 
-./run.py /home/kvb/prj/v40/fpga/xilinx13_4/fpga_v2/embed2/embed2/Debug/embed2.srec f0
+./run.py ~/prj/v40/fpga/xilinx13_4/fpga_v2/embed2/embed2/Debug/embed2.srec f0
 
 При успешном запуске скрипта в окне терминала ввести команду write и нажать кнопку Enter
